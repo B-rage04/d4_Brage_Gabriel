@@ -1,6 +1,6 @@
-from ..src.student_sim.sim_factory import create_simulation
-from ..src.student_sim.Graf import plot_simulation
-from ..src.student_sim.utils import display_results
+from src.student_sim.sim_factory import create_simulation
+from src.student_sim.Graf import plot_simulation
+from src.student_sim.utils import display_results
 
 def main():
 

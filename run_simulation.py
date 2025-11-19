@@ -14,7 +14,7 @@ def main():
         world_min=0,
         world_max=100,
         move_prob=0.80,
-        move_east_prob=0.55,
+        move_east_prob=0.5,
         #max_steps=12*60*60 #12 timer etter event #TODO
     )
 
@@ -22,7 +22,7 @@ def main():
 
     display_results(world,sim)
 
-    plot_simulation(world, sim)
+    #plot_simulation(world, sim)
 
 if __name__ == "__main__":
     main()

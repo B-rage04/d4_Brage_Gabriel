@@ -20,7 +20,7 @@ def main():
     for i in range(n_sim):
         display_results(worlds[i], sims[i])
         plot_simulation(worlds[i], sims[i])
-        #TODO sammenføy data til plots
+        #TODO sammenføy data til en plot(s). 
 
 
 if __name__ == "__main__":

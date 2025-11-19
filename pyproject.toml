@@ -1,0 +1,53 @@
+# This file is based on https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Student_sim"
+version = "0.0.1"
+authors = [
+  { name="GR", email="" },
+]
+description = "A simulation of the Chutes & Ladders board game"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = ["matplotlib",
+                "numpy",
+                "pyyaml"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Games/Entertainment :: Board Games"
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://gitlab.com/heplesser/chutes"
+Issues = "https://gitlab.com/heplesser/chutes/-/issues"
+
+[tool.setuptools]
+script-files = ["examples/chutes_demo.py"]
+
+[tool.tox]
+requires = ["tox>=4.32"]
+env_list = ["format", "3.14"]
+
+[tool.tox.env_run_base]
+deps = ["pytest", "pytest-cov"]
+description = "Run test under {base_python}"
+commands = [["pytest", "--cov", "chutes_sim"]]
+
+[tool.tox.env.format]
+deps = ["flake8"]
+description = "Check code style using flake8"
+skip_install = true
+commands = [["flake8", "--max-line-length", "120", "src", "tests"]]
+

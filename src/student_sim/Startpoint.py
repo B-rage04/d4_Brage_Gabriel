@@ -1,0 +1,1 @@
+# studnt spawner, has a cordinate

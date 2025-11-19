@@ -1,14 +1,14 @@
 This page presents the deliverable for weeks 47 and 48 (Tue 18.11.–Fri 28.11.).
 
-You shall prepare this deliverable together with your collaboration partner.
-Working with Git to document your work in small increments and to document collaboration is essential.
-Create a NEW Gitlab repository for this exercise!
+ x You shall prepare this deliverable together with your collaboration partner.
+ x Working with Git to document your work in small increments and to document collaboration is essential.
+ x Create a NEW Gitlab repository for this exercise!
 By the deadline on Friday, 28. November, 18.00, you shall 
-create a new repository on Gitlab
-call it d4_name1_name2, where name1 and name2 are your first names
+ x create a new repository on Gitlab
+ x call it d4_name1_name2, where name1 and name2 are your first names
 give heplesser access to the respository
-you can in principle work on Github, but you have to figure out issues, milestones, pull requests and actions there on your own
-create issues and milestones in Gitlab to plan the work on your project, connecting issues to milestones
+ x you can in principle work on Github, but you have to figure out issues, milestones, pull requests and actions there on your own
+ x create issues and milestones in Gitlab to plan the work on your project, connecting issues to milestones
 develop code and tests as described below
 build a python package (wheel)
 run in a terminal 
@@ -28,6 +28,7 @@ no credit will be given for deliveries that are handed in after that.
 Missing video
 3 points will be deducted for a missing video.
 If you do not have a collaboration partner and need to work alone, please see Instructions for working alone on deliverables.
+
 Walking home from AudMax (Samfunnet)
 Consider the following situation: After a long night of partying, student Alex wants to go home. We assume here that Ås is a one-dimensional world, stretching from E6 in the west (coordinate 0) to the railway line in the east (coordinate 100). Along this axis, we have, from west to east, Pentagon dorms, AudMax, and Kaia dorms. Due to the aftereffects of heavy partying, Alex' walk home is not too steady. Specifically, Alex proceeds as follows:
 

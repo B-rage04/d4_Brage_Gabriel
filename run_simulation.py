@@ -22,7 +22,7 @@ def main():
 
     display_results(world,sim)
 
-    #plot_simulation(world, sim)
+    plot_simulation(world, sim)
 
 if __name__ == "__main__":
     main()

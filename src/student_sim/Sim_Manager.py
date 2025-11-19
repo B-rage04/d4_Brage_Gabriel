@@ -19,8 +19,11 @@ class SimManager:
 
     def run(self):
         """Run simulation until all students finish."""
+        i=0
         while not all(s.finished for s in self.world.students):
+            #print(i)
             self.sim_step()
+            i=i+1
 
     def get_stats(self):
         """Return summary stats."""

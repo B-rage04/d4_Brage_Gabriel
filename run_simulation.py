@@ -9,20 +9,20 @@ def main():
         startpoints=[{"name": "AudMax", "position": 50}],
         endpoints=[
             {"name": "Pentagon", "position": 10, "entry_prob": 0.2, "max_capacity":0},
-            {"name": "Kaia", "position": 90, "entry_prob": 0.8, "max_capacity": 6}
+            {"name": "Kaia", "position": 90, "entry_prob": 0.5, "max_capacity": 9}
         ],
         world_min=0,
         world_max=100,
-        move_prob=0.2,
-        move_east_prob=0.5,
-        #max_steps=12*60*60 #12 timer etter event
+        move_prob=0.80,
+        move_east_prob=0.55,
+        #max_steps=12*60*60 #12 timer etter event #TODO
     )
 
     sim.run()
 
     display_results(world,sim)
 
-    # plot_simulation(world, sim)
+    #plot_simulation(world, sim)
 
 if __name__ == "__main__":
     main()

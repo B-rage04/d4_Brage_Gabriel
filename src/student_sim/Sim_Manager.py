@@ -1,5 +1,5 @@
 
-from .World import World
+from student_sim.World import World
 class SimManager:
     def __init__(self, world: World):
         self.world = world
@@ -21,7 +21,7 @@ class SimManager:
         """Run simulation until all students finish."""
         i=0
         while not all(s.finished for s in self.world.students):
-            print(i)
+            #print(i)
             self.sim_step()
             i=i+1
 

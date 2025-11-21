@@ -1,8 +1,8 @@
-from src.student_sim.World import World
-from src.student_sim.Student import Student
-from src.student_sim.Startpoint import Startpoint
-from src.student_sim.Endpoint import Endpoint
-from src.student_sim.Sim_Manager import SimManager
+from student_sim.World import World
+from student_sim.Student import Student
+from student_sim.Startpoint import Startpoint
+from student_sim.Endpoint import Endpoint
+from student_sim.Sim_Manager import SimManager
 
 def create_simulation(
     n_students=1,

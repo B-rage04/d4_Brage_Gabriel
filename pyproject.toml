@@ -8,11 +8,12 @@ build-backend = "setuptools.build_meta"
 name = "Student_sim"
 version = "0.0.1"
 authors = [
-  { name="GR", email="" },
-]
-description = "A simulation of the Chutes & Ladders board game"
+  { name="Gabriel Roer", email="gabriel.roer@nmbu.no" },
+  { name="Brage Bestvold", email="brage.bromset.bestvold@nmbu.no"}]
+
+description = "A simulation of a drunk girl walking home from Aud-Max"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.13.3"
 dependencies = ["matplotlib",
                 "numpy",
                 "pyyaml"]
@@ -34,7 +35,7 @@ Homepage = "https://gitlab.com/heplesser/chutes"
 Issues = "https://gitlab.com/heplesser/chutes/-/issues"
 
 [tool.setuptools]
-script-files = ["examples/chutes_demo.py"]
+script-files = ["Examples/run_simulation.py"]
 
 [tool.tox]
 requires = ["tox>=4.32"]

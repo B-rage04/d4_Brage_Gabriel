@@ -1,4 +1,4 @@
-from .Startpoint import Startpoint
+from student_sim.Startpoint import Startpoint
 from random import random
 
 class Student:

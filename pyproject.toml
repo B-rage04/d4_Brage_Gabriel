@@ -44,7 +44,7 @@ env_list = ["format", "3.14"]
 [tool.tox.env_run_base]
 deps = ["pytest", "pytest-cov"]
 description = "Run test under {base_python}"
-commands = [["pytest", "--cov", "chutes_sim"]]
+commands = [["pytest", "--cov", "DA"]]
 
 [tool.tox.env.format]
 deps = ["flake8"]

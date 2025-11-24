@@ -15,7 +15,8 @@ description = "A simulation of a drunk girl walking home from Aud-Max"
 readme = "README.md"
 requires-python = ">=3.13.3"
 dependencies = ["matplotlib>=3.10.7",
-                "numpy>=2.3.3"]
+                "numpy>=2.3.3",
+                "seaborn>=0.13.2"]
 
 classifiers = [
     "Programming Language :: Python :: 3",

@@ -1,12 +1,20 @@
 from student_sim.Startpoint import Startpoint
 from random import random
 
+
 class Student:
-    def __init__(self, name: str, startpoint: Startpoint, move_prob: float = 0.2, move_east_prob: float = 0.5, world_min: int = 0, world_max: int = 100):
+    def __init__(self,
+                 name: str,
+                 startpoint: Startpoint,
+                 move_prob: float = 0.2,
+                 move_east_prob: float = 0.5,
+                 world_min: int = 0,
+                 world_max: int = 100):
+
         self.name = name
         self.position = startpoint.position
-        self.move_prob = move_prob           # probability of taking a step each second
-        self.move_east_prob = move_east_prob # probability step is east
+        self.move_prob = move_prob            # probability of taking a step each second
+        self.move_east_prob = move_east_prob  # probability step is east
         self.world_min = world_min
         self.world_max = world_max
         self.steps_taken = 0

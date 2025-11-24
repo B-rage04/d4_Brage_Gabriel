@@ -11,7 +11,7 @@ class Endpoint:
         if self.max_capacity == 0:
             self.current_occupancy += 1
             return True
-        
+
         if self.max_capacity is not None and self.current_occupancy >= self.max_capacity:
             return False
         from random import random

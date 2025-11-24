@@ -4,6 +4,7 @@ from student_sim.Startpoint import Startpoint
 from student_sim.Endpoint import Endpoint
 from student_sim.Sim_Manager import SimManager
 
+
 def create_simulation(
     n_students=1,
     startpoints=[{"name": "AudMax", "position": 50}],
@@ -39,7 +40,7 @@ def create_simulation(
     # Add startpoints
     for sp in startpoints:
         world.add_startpoint(Startpoint(sp["name"], position=sp["position"]))
-    
+
     # Add endpoints
     for ep in endpoints:
         world.add_endpoint(
@@ -50,10 +51,9 @@ def create_simulation(
                 max_capacity=ep["max_capacity"]
             )
         )
-    
+
     # Use first startpoint as default spawn location
     default_start = next(iter(world.startpoints.values()))
-
 
     # Spawn students
     for i in range(n_students):

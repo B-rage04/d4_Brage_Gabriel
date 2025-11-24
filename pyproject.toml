@@ -14,9 +14,9 @@ authors = [
 description = "A simulation of a drunk girl walking home from Aud-Max"
 readme = "README.md"
 requires-python = ">=3.13.3"
-dependencies = ["matplotlib",
-                "numpy",
-                "pyyaml"]
+dependencies = ["matplotlib>=3.10.7",
+                "numpy>=2.3.3",
+                "seaborn>=0.13.2"]
 
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -44,11 +44,11 @@ env_list = ["format", "3.14"]
 [tool.tox.env_run_base]
 deps = ["pytest", "pytest-cov"]
 description = "Run test under {base_python}"
-commands = [["pytest", "--cov", "chutes_sim"]]
+commands = [["pytest", "--cov", "DA"]]
 
 [tool.tox.env.format]
 deps = ["flake8"]
 description = "Check code style using flake8"
-skip_install = true
+skip_install = false
 commands = [["flake8", "--max-line-length", "120", "src", "tests"]]
 

@@ -53,4 +53,3 @@ deps = ["flake8"]
 description = "Check code style using flake8"
 skip_install = false
 commands = [["flake8", "--max-line-length", "120", "src", "test", "Examples"]]
-

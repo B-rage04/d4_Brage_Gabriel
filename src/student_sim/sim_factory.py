@@ -5,7 +5,7 @@ from src.student_sim.Endpoint import Endpoint
 from src.student_sim.Sim_Manager import SimManager
 
 def create_simulation(
-    n_students=1,
+    n_students=100,
     startpoints=[{"name": "AudMax", "position": 50}],
     endpoints=[
         {"name": "Pentagon", "position": 10, "entry_prob": 0.5, "max_capacity": 0},
@@ -32,6 +32,17 @@ def create_simulation(
         world (World): The simulation world
         sim (SimManager): Simulation manager
     """
+
+    #print sim settings norsk
+    print("----- Simuleringsinnstillinger")
+    print(f"studenter: {n_students}")
+    print(f"startpunkter: {startpoints}")
+    print(f"endepunkter: {endpoints}")
+    print(f"verden minimum: {world_min}")
+    print(f"verden maksimum: {world_max}")
+    print(f"sannsynlighet for å bevege seg: {move_prob}")
+    print(f"sannsynlighet for å bevege seg øst: {move_east_prob}")
+    print("------------------------------")
 
     # Create world with bounds
     world = World(world_min=world_min, world_max=world_max)

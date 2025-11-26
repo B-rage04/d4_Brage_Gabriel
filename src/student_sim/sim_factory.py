@@ -9,12 +9,12 @@ def create_simulation(
     n_students=1,
     startpoints=[{"name": "AudMax", "position": 50}],
     endpoints=[
-        {"name": "Pentagon", "position": 10, "entry_prob": 0.1, "max_capacity": 0},
-        {"name": "Kaia", "position": 90, "entry_prob": 0.1, "max_capacity": 0}
+        {"name": "Pentagon", "position": 10, "entry_prob": 0.7, "max_capacity": 0},
+        {"name": "Kaia", "position": 90, "entry_prob": 0.2, "max_capacity": 0}
     ],
     world_min=0,
     world_max=100,
-    move_prob=0.99,
+    move_prob=0.2,
     move_east_prob=0.5,
     debug=False
 ):
@@ -44,6 +44,7 @@ def create_simulation(
         print(f"verden maksimum: {world_max}")
         print(f"sannsynlighet for å bevege seg: {move_prob}")
         print(f"sannsynlighet for å bevege seg øst: {move_east_prob}")
+        print(f"debug: {debug}")
         print("------------------------------")
 
     # Create world with bounds

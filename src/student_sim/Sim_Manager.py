@@ -25,7 +25,7 @@ class SimManager:
         i = 0
         
         while not all(s.finished for s in self.world.students):
-            if self.debug:
+            if self.debug == True:
                 if i < 1000:
                     if i % 100 == 0:
                         print(f"SimTime: {i} seconds")

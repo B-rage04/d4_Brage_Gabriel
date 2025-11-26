@@ -6,7 +6,7 @@ from student_sim.Sim_Manager import SimManager
 
 
 def create_simulation(
-    n_students=1,
+    n_students=100,
     startpoints=[{"name": "AudMax", "position": 50}],
     endpoints=[
         {"name": "Pentagon", "position": 10, "entry_prob": 0.5, "max_capacity": 0},

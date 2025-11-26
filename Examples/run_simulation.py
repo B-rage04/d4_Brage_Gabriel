@@ -1,6 +1,6 @@
 from student_sim.sim_factory import create_simulation
 from student_sim.Graf import plot_simulation
-from student_sim.utils import display_results
+from student_sim.utils import display_results , merge_simulation_data
 
 
 def main():
@@ -25,6 +25,7 @@ def main():
         display_results(worlds[i], sims[i])
         #plot_simulation(worlds[i], sims[i])
 
+    world, sim = merge_simulation_data(worlds, sims)
 
     display_results(world, sim)
     plot_simulation(world, sim)

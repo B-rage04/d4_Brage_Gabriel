@@ -23,9 +23,9 @@ class SimManager:
     def run(self):
         """Run simulation until all students finish."""
         i = 0
-        if self.debug:
-            
-            while not all(s.finished for s in self.world.students):
+        
+        while not all(s.finished for s in self.world.students):
+            if self.debug:
                 if i < 1000:
                     if i % 100 == 0:
                         print(f"SimTime: {i} seconds")
@@ -35,7 +35,7 @@ class SimManager:
                 if i >= 10000:
                     if i % 1000 == 0:
                         print(f"SimTime: {i} seconds")
-    
+
             self.sim_step()
             i += 1
 

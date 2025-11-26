@@ -16,7 +16,6 @@ class Endpoint:
             return False
         from random import random
         ran = random()
-        print(ran)
         if ran < self.entry_prob:
             self.current_occupancy += 1
             return True

@@ -2,11 +2,12 @@ from .Student import Student
 from .Startpoint import Startpoint
 from .Endpoint import Endpoint
 
+
 class World:
     def __init__(self, world_min: int = 0, world_max: int = 100):
         self.students = []
-        self.startpoints = {}   
-        self.endpoints = {}     
+        self.startpoints = {}
+        self.endpoints = {}
         self.world_min = world_min
         self.world_max = world_max
 

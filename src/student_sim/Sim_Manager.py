@@ -3,8 +3,9 @@ from student_sim.World import World
 
 
 class SimManager:
-    def __init__(self, world: World):
+    def __init__(self, world: World, debug=False):
         self.world = world
+        self.debug = debug
 
     def sim_step(self):
         """Advance all students by one second."""
@@ -22,18 +23,19 @@ class SimManager:
     def run(self):
         """Run simulation until all students finish."""
         i = 0
-
-        while not all(s.finished for s in self.world.students):
-            if i < 1000:
-                if i % 100 == 0:
-                    print(f"SimTime: {i} seconds")
-            if 1000 <= i < 10000:
-                if i % 500 == 0:
-                    print(f"SimTime: {i} seconds")
-            if i >= 10000:
-                if i % 1000 == 0:
-                    print(f"SimTime: {i} seconds")
-
+        if self.debug:
+            
+            while not all(s.finished for s in self.world.students):
+                if i < 1000:
+                    if i % 100 == 0:
+                        print(f"SimTime: {i} seconds")
+                if 1000 <= i < 10000:
+                    if i % 500 == 0:
+                        print(f"SimTime: {i} seconds")
+                if i >= 10000:
+                    if i % 1000 == 0:
+                        print(f"SimTime: {i} seconds")
+    
             self.sim_step()
             i += 1
 

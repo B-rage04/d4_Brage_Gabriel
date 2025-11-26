@@ -15,7 +15,8 @@ def create_simulation(
     world_min=0,
     world_max=100,
     move_prob=0.99,
-    move_east_prob=0.5
+    move_east_prob=0.5,
+    debug=False
 ):
     """
     Creates a World object, adds startpoints, endpoints, and students.
@@ -34,16 +35,16 @@ def create_simulation(
         sim (SimManager): Simulation manager
     """
 
-    #print sim settings norsk
-    print("----- Simuleringsinnstillinger")
-    print(f"studenter: {n_students}")
-    print(f"startpunkter: {startpoints}")
-    print(f"endepunkter: {endpoints}")
-    print(f"verden minimum: {world_min}")
-    print(f"verden maksimum: {world_max}")
-    print(f"sannsynlighet for å bevege seg: {move_prob}")
-    print(f"sannsynlighet for å bevege seg øst: {move_east_prob}")
-    print("------------------------------")
+    if debug:
+        print("----- Simuleringsinnstillinger")
+        print(f"studenter: {n_students}")
+        print(f"startpunkter: {startpoints}")
+        print(f"endepunkter: {endpoints}")
+        print(f"verden minimum: {world_min}")
+        print(f"verden maksimum: {world_max}")
+        print(f"sannsynlighet for å bevege seg: {move_prob}")
+        print(f"sannsynlighet for å bevege seg øst: {move_east_prob}")
+        print("------------------------------")
 
     # Create world with bounds
     world = World(world_min=world_min, world_max=world_max)

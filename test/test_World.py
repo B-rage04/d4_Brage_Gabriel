@@ -21,7 +21,7 @@ def test_world_methods():
     world = World()
 
     start = Startpoint("start", 50)
-    end = Endpoint("goal",20, 0.4)
+    end = Endpoint("goal", 20, 0.4)
     student = Student("Alex", start)
 
     world.add_student(student)
@@ -36,7 +36,7 @@ def test_world_methods():
 def test_world_reset():
     world = World()
     start = Startpoint("start", 30)
-    student = Student("Alex", start , 1, 1)
+    student = Student("Alex", start, 1, 1)
     world.add_startpoint(start)
     world.add_student(student)
     student.step()

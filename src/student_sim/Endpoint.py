@@ -15,9 +15,7 @@ class Endpoint:
         if self.max_capacity is not None and self.current_occupancy >= self.max_capacity:
             return False
         from random import random
-        ran = random()
-        print(ran)
-        if ran < self.entry_prob:
+        if random() < self.entry_prob:
             self.current_occupancy += 1
             return True
         return False

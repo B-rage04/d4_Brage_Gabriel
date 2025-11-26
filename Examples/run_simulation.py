@@ -5,7 +5,7 @@ from student_sim.utils import display_results , merge_simulation_data
 
 def main():
 
-    n_sim = 30
+    n_sim = 300
 
     worlds = []
     sims = []

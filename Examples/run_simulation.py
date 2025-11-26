@@ -6,7 +6,7 @@ from student_sim.utils import display_results, merge_simulation_data
 def main():
     debug = True
 
-    n_sim = 300
+    n_sim = 1
 
     worlds = []
     sims = []

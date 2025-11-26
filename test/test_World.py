@@ -10,6 +10,7 @@ def test_world():
     assert world.endpoints == {}
     assert world.world_min == 0
     assert world.world_max == 100
+    assert world.world_min == 30
 
 def test_world2():
 

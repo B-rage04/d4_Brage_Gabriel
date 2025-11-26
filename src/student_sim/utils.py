@@ -1,6 +1,7 @@
 from copy import deepcopy
 from student_sim.Sim_Manager import SimManager
 
+
 def display_results(world, sim):
     """Prints and plots results of the simulation."""
     print("\n=== Individual Student Results ===")
@@ -19,6 +20,7 @@ def display_results(world, sim):
     print("Destination counts:")
     for ep, count in stats['destinations'].items():
         print(f"  {ep}: {count}")
+
 
 def merge_simulation_data(worlds, sims):
     """Merges data from multiple simulations for combined analysis.

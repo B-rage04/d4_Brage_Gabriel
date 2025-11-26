@@ -16,7 +16,7 @@ def main():
         if debug:
             print(f"------------------------- Running simulation {i+1}/{n_sim}")
         world, sim = create_simulation()
-        sim.run() #hadde vert morsomt om de viste sim live
+        sim.run()  # hadde vert morsomt om de viste sim live
         worlds.append(world)
         sims.append(sim)
         if debug:
@@ -33,6 +33,7 @@ def main():
 
     display_results(world, sim)
     plot_simulation(world, sim)
+
 
 if __name__ == "__main__":
     main()

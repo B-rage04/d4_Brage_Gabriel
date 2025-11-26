@@ -8,11 +8,11 @@ class Endpoint:
 
     def try_enter(self) -> bool:
         """Student tries to enter endpoint."""
-        
-        from random import random
-        if random() < self.entry_prob: #successful entry
 
-            if self.max_capacity == 0: #no max capacity
+        from random import random
+        if random() < self.entry_prob:  # successful entry
+
+            if self.max_capacity == 0:  # no max capacity
                 self.current_occupancy += 1
                 return True
 

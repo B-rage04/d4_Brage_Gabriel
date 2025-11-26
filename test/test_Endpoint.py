@@ -1,7 +1,8 @@
 import pytest
 from student_sim.Endpoint import Endpoint
-from random import seed, random
+from random import seed
 seed = seed(123) 
+
 
 @pytest.mark.parametrize("name, position, entry_prob, max_capasity",
                          [("Kaia", 50, 0.5, 5),

@@ -3,6 +3,7 @@ from student_sim.Student import Student
 from student_sim.Startpoint import Startpoint
 from student_sim.Endpoint import Endpoint
 
+
 def test_world():
     world = World()
     assert world.students == []
@@ -11,11 +12,13 @@ def test_world():
     assert world.world_min == 0
     assert world.world_max == 100
 
+
 def test_world2():
 
     world = World(50, 75)
     assert world.world_min == 50
     assert world.world_max == 75
+
 
 def test_world_methods():
     world = World()
@@ -32,6 +35,7 @@ def test_world_methods():
     assert world.startpoints == {"start": start}
     assert world.endpoints == {"goal": end}
     assert world.get_all_positions() == [student.position]
+
 
 def test_world_reset():
     world = World()

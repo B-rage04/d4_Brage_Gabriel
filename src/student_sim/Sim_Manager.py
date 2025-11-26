@@ -24,7 +24,16 @@ class SimManager:
         i = 0
 
         while not all(s.finished for s in self.world.students):
-            # print(i)
+            if i < 1000:
+                if i % 100 == 0:
+                    print(f"SimTime: {i} seconds")
+            if 1000 <= i < 10000:
+                if i % 500 == 0:
+                    print(f"SimTime: {i} seconds")
+            if i >= 10000:
+                if i % 1000 == 0:
+                    print(f"SimTime: {i} seconds")
+
             self.sim_step()
             i += 1
 

@@ -18,7 +18,8 @@ dependencies = ["matplotlib>=3.10.7",
                 "numpy>=2.3.3",
                 "seaborn>=0.13.2",
                 "pytest",
-                "pytest-cov"]
+                "pytest-cov",
+                "tox"]
 
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -53,4 +54,3 @@ deps = ["flake8"]
 description = "Check code style using flake8"
 skip_install = false
 commands = [["flake8", "--max-line-length", "120", "src", "test", "Examples"]]
-

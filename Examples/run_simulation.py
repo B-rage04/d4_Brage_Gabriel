@@ -2,6 +2,7 @@ from student_sim.sim_factory import create_simulation
 from student_sim.Graf import plot_simulation
 from student_sim.utils import display_results
 
+
 def main():
 
     n_sim = 40
@@ -20,7 +21,7 @@ def main():
     for i in range(n_sim):
         display_results(worlds[i], sims[i])
         plot_simulation(worlds[i], sims[i])
-        #TODO sammenføy data til en plot(s). 
+        # TODO sammenføy data til en plot(s).
 
 
 if __name__ == "__main__":

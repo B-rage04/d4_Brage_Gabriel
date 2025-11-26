@@ -1,6 +1,6 @@
 from student_sim.sim_factory import create_simulation
 from student_sim.Graf import plot_simulation
-from student_sim.utils import display_results , merge_simulation_data
+from student_sim.utils import display_results, merge_simulation_data
 
 
 def main():

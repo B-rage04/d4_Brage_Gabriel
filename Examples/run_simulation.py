@@ -4,6 +4,7 @@ from student_sim.utils import display_results , merge_simulation_data
 
 
 def main():
+    debug = False
 
     n_sim = 300
 
@@ -19,11 +20,12 @@ def main():
         sims.append(sim)
         print(f"------------------------- Finished simulation {i+1}/{n_sim}")
 
-    # Display all results
-    for i in range(n_sim):
-        print(f"------------------------- Results for simulation {i+1}/{n_sim}")
-        display_results(worlds[i], sims[i])
-        #plot_simulation(worlds[i], sims[i])
+    if debug:
+        # Display all results
+        for i in range(n_sim):
+            print(f"------------------------- Results for simulation {i+1}/{n_sim}")
+            display_results(worlds[i], sims[i])
+            #plot_simulation(worlds[i], sims[i])
 
     world, sim = merge_simulation_data(worlds, sims)
 

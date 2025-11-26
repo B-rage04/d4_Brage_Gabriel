@@ -1,5 +1,5 @@
 from copy import deepcopy
-from src.student_sim.Sim_Manager import SimManager
+from student_sim.Sim_Manager import SimManager
 
 def display_results(world, sim):
     """Prints and plots results of the simulation."""

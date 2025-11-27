@@ -1,3 +1,10 @@
+"""
+Authors:
+Brage Bromset Bestvold
+Gabriel Røer
+"""
+
+
 class Endpoint:
     def __init__(self, name: str, position: int, entry_prob: float, max_capacity: int = None):
         self.name = name

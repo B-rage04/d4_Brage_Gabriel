@@ -1,3 +1,10 @@
+"""
+Authors:
+Brage Bromset Bestvold
+Gabriel Røer
+"""
+
+
 from .Student import Student
 from .Startpoint import Startpoint
 from .Endpoint import Endpoint

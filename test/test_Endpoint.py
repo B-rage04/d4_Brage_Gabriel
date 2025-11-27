@@ -1,3 +1,10 @@
+"""
+Authors:
+Brage Bromset Bestvold
+Gabriel Røer
+"""
+
+
 import pytest
 from student_sim.Endpoint import Endpoint
 from random import seed

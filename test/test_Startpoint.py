@@ -1,3 +1,10 @@
+"""
+Authors:
+Brage Bromset Bestvold
+Gabriel Røer
+"""
+
+
 import pytest
 from student_sim.Startpoint import Startpoint
 

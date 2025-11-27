@@ -1,3 +1,10 @@
+"""
+Authors:
+Brage Bromset Bestvold
+Gabriel Røer
+"""
+
+
 from copy import deepcopy
 from student_sim.Sim_Manager import SimManager
 

@@ -1,3 +1,10 @@
+"""
+Authors:
+Brage Bromset Bestvold
+Gabriel Røer
+"""
+
+
 from student_sim.Sim_Manager import SimManager
 from student_sim.World import World
 from student_sim.Student import Student

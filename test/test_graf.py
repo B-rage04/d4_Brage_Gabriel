@@ -1,3 +1,10 @@
+"""
+Authors:
+Brage Bromset Bestvold
+Gabriel Røer
+"""
+
+
 from student_sim.Graf import plot_simulation
 from student_sim.sim_factory import create_simulation
 

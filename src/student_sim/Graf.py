@@ -1,3 +1,9 @@
+"""
+Authors:
+Brage Bromset Bestvold
+Gabriel Røer
+"""
+
 
 import matplotlib.pyplot as plt
 import seaborn as sns

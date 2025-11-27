@@ -31,7 +31,7 @@ def test_try_enter1():
 
 def test_try_enter2():
     end = Endpoint("Kaia", 50, 0.5, 3)
-    assert end.try_enter()
+    assert not end.try_enter()
 
 
 def test_try_enter3():

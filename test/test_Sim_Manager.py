@@ -35,12 +35,12 @@ def test_sim_step():
 def test_sim_run():
     world = World()
     start = Startpoint("start", 50)
-    end = Endpoint("goal", 51, 1)
+    end = Endpoint("goal", 51, 1, 0)
     student = Student("Alex", start, 1, 1)
     world.add_student(student)
     world.add_startpoint(start)
     world.add_endpoint(end)
-    sim = SimManager(world)
+    sim = SimManager(world, debug=True)
     sim.run()
     assert sim.world.students[0].finished
 
@@ -48,7 +48,7 @@ def test_sim_run():
 def test_get_stats():
     world = World()
     start = Startpoint("start", 50)
-    end = Endpoint("goal", 51, 1)
+    end = Endpoint("goal", 51, 1, 0)
     student = Student("Alex", start, 1, 1)
     world.add_student(student)
     world.add_startpoint(start)

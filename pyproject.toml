@@ -38,7 +38,7 @@ Homepage = "https://gitlab.com/heplesser/chutes"
 Issues = "https://gitlab.com/heplesser/chutes/-/issues"
 
 [tool.setuptools]
-script-files = ["Examples/run_simulation.py"]
+script-files = ["Examples/jupiter.ipynb"]
 
 [tool.tox]
 requires = ["tox>=4.32"]
